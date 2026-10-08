@@ -24,20 +24,20 @@
                        required 
                        autofocus 
                        placeholder="nama@kualaalam.desa.id"
-                       class="w-full pl-9 pr-3 py-2 border border-stone-300 focus:border-bumdes-red-600 focus:ring-bumdes-red-600 rounded-xl shadow-sm text-sm text-stone-900 placeholder:text-stone-400" />
+                       class="w-full pl-9 pr-3 py-2 border border-slate-300 focus:border-emerald-600 focus:ring-emerald-600 rounded-xl shadow-xs text-sm text-slate-900 placeholder:text-slate-400" />
             </div>
-            <x-input-error :messages="$errors->get('email')" class="mt-1.5 text-xs text-rose-600 font-medium" />
+            <x-input-error :messages="$errors->get('email')" class="mt-1.5 text-xs text-red-600 font-medium" />
         </div>
 
         <div class="pt-2">
-            <button type="submit" class="w-full py-2.5 px-4 bg-bumdes-red-700 hover:bg-bumdes-red-800 text-white font-bold text-sm rounded-xl shadow-md transition flex items-center justify-center gap-2">
+            <button type="submit" class="w-full py-2.5 px-4 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm rounded-xl shadow-xs transition flex items-center justify-center gap-2">
                 <span>Kirim Tautan Atur Ulang</span>
                 <i data-lucide="send" class="w-4 h-4"></i>
             </button>
         </div>
 
         <div class="text-center pt-2">
-            <a href="{{ route('login') }}" class="text-xs font-semibold text-stone-600 hover:text-stone-900 underline">
+            <a href="{{ route('login') }}" class="text-xs font-semibold text-slate-600 hover:text-slate-900 underline">
                 Kembali ke halaman masuk
             </a>
         </div>

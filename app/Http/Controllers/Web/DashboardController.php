@@ -101,6 +101,30 @@ class DashboardController extends Controller
         }
         $totalTxCount = $totalFilterTxQuery->count();
 
+        // Hitung akumulasi riil Uang Masuk dan Uang Keluar dari transaksi yang difilter
+        $totalUangMasuk = (float) (clone $totalFilterTxQuery)
+            ->where('jenis_transaksi', 'masuk')
+            ->sum('nominal');
+
+        $totalUangKeluar = (float) (clone $totalFilterTxQuery)
+            ->where('jenis_transaksi', 'keluar')
+            ->sum('nominal');
+
+        $hasilUsahaBersih = $totalUangMasuk - $totalUangKeluar;
+
+        // Hitung Saldo Kas & Bank Riil yang Tersedia (Kas Tunai & Rekening Bank BUMDesa dan Seluruh Unit Usaha)
+        $saldoKasBank = 0;
+        foreach (($balance['aset'] ?? []) as $item) {
+            $kode = $item['kode_akun'] ?? '';
+            if (in_array($kode, ['111', '112']) || str_starts_with($kode, '11-') || str_starts_with($kode, '12-')) {
+                $saldoKasBank += (float) ($item['saldo'] ?? 0);
+            }
+        }
+
+        if ($saldoKasBank === 0.0 && ($totalUangMasuk > 0 || $totalUangKeluar > 0)) {
+            $saldoKasBank = $totalUangMasuk - $totalUangKeluar;
+        }
+
         $pendingTransactions = Transaksi::with(['unit', 'coa', 'user'])
             ->where('status', 'menunggu')
             ->orderBy('tanggal', 'desc')
@@ -125,7 +149,11 @@ class DashboardController extends Controller
             'latestReport', 
             'unitPerformances',
             'monthTxCounts',
-            'totalTxCount'
+            'totalTxCount',
+            'totalUangMasuk',
+            'totalUangKeluar',
+            'hasilUsahaBersih',
+            'saldoKasBank'
         ));
     }
 

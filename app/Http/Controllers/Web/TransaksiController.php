@@ -397,6 +397,14 @@ class TransaksiController extends Controller
      */
     public function storeUmumTransaction(Request $request)
     {
+        if (!$request->has('kode_akun')) {
+            if ($request->input('jenis_transaksi') === 'masuk') {
+                $request->merge(['kode_akun' => $request->input('kode_akun_kredit')]);
+            } else {
+                $request->merge(['kode_akun' => $request->input('kode_akun_debet')]);
+            }
+        }
+
         $request->validate([
             'kode_akun' => 'required|exists:chart_of_accounts,kode_akun',
             'rekening_kas' => 'nullable|in:111,112',

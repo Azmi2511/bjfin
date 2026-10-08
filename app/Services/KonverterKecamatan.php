@@ -69,19 +69,12 @@ class KonverterKecamatan
             $sheetKas->setCellValue('C7', ($bulan > 0) ? ": {$bulanUpper} {$tahun}" : ": TAHUNAN {$tahun}");
             $sheetKas->setCellValue('E33', "Kuala Alam, {$lastDay} {$bulanText} {$tahun}");
 
-            // Ambil transaksi yang disetujui untuk periode terkait
+            // Ambil seluruh transaksi yang disetujui untuk periode terkait (konsolidasi BUMDesa)
             $query = Transaksi::whereYear('tanggal', $tahun)->where('status', 'disetujui');
             if ($bulan > 0) {
                 $query->whereMonth('tanggal', $bulan);
             }
-            $pusatQuery = clone $query;
-            $pusatQuery->where(function ($q) {
-                $q->where('id_unit', 1)->orWhereNull('id_unit');
-            });
-            $txs = $pusatQuery->orderBy('tanggal', 'asc')->orderBy('id_transaksi', 'asc')->get();
-            if ($txs->isEmpty()) {
-                $txs = $query->orderBy('tanggal', 'asc')->orderBy('id_transaksi', 'asc')->take(13)->get();
-            }
+            $txs = $query->orderBy('tanggal', 'asc')->orderBy('id_transaksi', 'asc')->get();
 
             $count = $txs->count();
             $startRow = 11;

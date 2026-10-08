@@ -39,6 +39,15 @@ class BumdesWorkflowTest extends TestCase
         $response->assertSee('Validasi Transaksi');
         $response->assertSee('Kas & Memorial Pusat', false);
         $response->assertSee('Laporan Keuangan');
+
+        // Verifikasi card Uang Keluar dan Saldo Kas & Bank menampilkan nominal riil yang benar
+        $response2026 = $this->get(route('dashboard', ['tahun' => 2026]));
+        $response2026->assertStatus(200);
+        $response2026->assertSee('Saldo Kas & Bank (Tersedia)', false);
+        $response2026->assertSee('650.000');
+        $response2026->assertSee('Uang Keluar');
+        $response2026->assertSee('25.000');
+        $response2026->assertSee('675.000');
     }
 
     /**
@@ -463,6 +472,77 @@ class BumdesWorkflowTest extends TestCase
         $this->assertStringContainsString('2026', (string) $kasSheet->getCell('C7')->getValue());
         $coverSheet = $spreadsheet->getSheetByName('COVER');
         $this->assertStringContainsString('2026', (string) $coverSheet->getCell('B16')->getValue());
+    }
+
+    /**
+     * Download Excel memasukkan semua data transaksi yang sesuai filter, bukan hanya 1 data terbaru.
+     */
+    public function test_download_excel_includes_all_filtered_transactions_across_units(): void
+    {
+        $uspUnit = UnitUsaha::where('kode_unit', 'USP')->firstOrFail();
+        $wifiUnit = UnitUsaha::where('kode_unit', 'WIFI')->firstOrFail();
+
+        // Buat 3 transaksi pada periode yang sama: unit USP, unit WIFI, dan pusat (unit 1)
+        Transaksi::create([
+            'id_unit' => $uspUnit->id_unit,
+            'id_user' => 1,
+            'tanggal' => '2026-05-10',
+            'jenis_transaksi' => 'masuk',
+            'kode_akun' => '411',
+            'nominal' => 300000,
+            'keterangan' => 'Pendapatan Unit USP Mei',
+            'status' => 'disetujui',
+        ]);
+
+        Transaksi::create([
+            'id_unit' => $wifiUnit->id_unit,
+            'id_user' => 1,
+            'tanggal' => '2026-05-15',
+            'jenis_transaksi' => 'masuk',
+            'kode_akun' => '411',
+            'nominal' => 200000,
+            'keterangan' => 'Pendapatan Unit WiFi Mei',
+            'status' => 'disetujui',
+        ]);
+
+        Transaksi::create([
+            'id_unit' => 1,
+            'id_user' => 1,
+            'tanggal' => '2026-05-20',
+            'jenis_transaksi' => 'masuk',
+            'kode_akun' => '413',
+            'nominal' => 100000,
+            'keterangan' => 'Pendapatan Bunga Pusat Mei',
+            'status' => 'disetujui',
+        ]);
+
+        $konverter = app(\App\Services\KonverterKecamatan::class);
+        $filePath = $konverter->exportToFile(2026, 5);
+
+        $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($filePath);
+        $kasSheet = $spreadsheet->getSheetByName('KAS BUMDESA');
+
+        // Pastikan ketiga transaksi masuk ke dalam baris Kas BUMDesa
+        $this->assertEquals('Pendapatan Unit USP Mei', $kasSheet->getCell('B11')->getValue());
+        $this->assertEquals('Pendapatan Unit WiFi Mei', $kasSheet->getCell('B12')->getValue());
+        $this->assertEquals('Pendapatan Bunga Pusat Mei', $kasSheet->getCell('B13')->getValue());
+        $this->assertEquals(300000, $kasSheet->getCell('E11')->getValue());
+        $this->assertEquals(200000, $kasSheet->getCell('E12')->getValue());
+        $this->assertEquals(100000, $kasSheet->getCell('E13')->getValue());
+    }
+
+    /**
+     * Halaman laporan memiliki filter otomatis dan mendukung filter setahun maupun bulanan.
+     */
+    public function test_reports_page_filter_and_auto_submission(): void
+    {
+        $response = $this->get(route('reports', ['tahun' => 2026, 'bulan' => 'all']));
+        $response->assertStatus(200);
+        $response->assertSee('name="tahun"', false);
+        $response->assertSee('name="bulan"', false);
+        $response->assertSee('onchange="this.form.submit()"', false);
+        $response->assertDontSee('Terapkan Filter');
+        $response->assertSee(route('reports.download-excel', ['tahun' => 2026, 'bulan' => 'all']));
     }
 
     /**

@@ -37,7 +37,7 @@
     <footer class="w-full max-w-[1720px] mx-auto px-4 sm:px-6 py-4 text-center text-xs text-slate-400 relative z-10 flex flex-col sm:flex-row items-center justify-between gap-2 border-t border-slate-800">
         <div class="flex items-center gap-2">
             <img src="{{ asset('assets/logo.png') }}" alt="Logo BUMDesa" class="w-4 h-4 object-contain">
-            <p>© {{ date('Y') }} BJFin BUMDesa Kuala Alam. SAK ETAP Financial Portal.</p>
+            <p>© {{ date('Y') }} BJFin BUMDesa Kuala Alam. Sistem Pengelolaan Keuangan Desa.</p>
         </div>
         <p class="text-[11px] text-slate-500">Kecamatan Bengkalis, Kabupaten Bengkalis, Riau</p>
     </footer>

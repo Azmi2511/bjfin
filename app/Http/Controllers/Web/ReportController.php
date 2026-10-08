@@ -37,18 +37,40 @@ class ReportController extends Controller
         }
 
         $tahun = (int) $request->query('tahun', $availableYears[0]);
-        $bulan = (int) $request->query('bulan', 1);
+        $bulanQuery = $request->query('bulan');
+        $bulan = ($bulanQuery === null || $bulanQuery === 'all' || $bulanQuery === '0' || $bulanQuery === '') 
+            ? null 
+            : (int) $bulanQuery;
 
         $income = $this->accounting->getIncomeStatement($tahun, $bulan);
         $balance = $this->accounting->getBalanceSheet($tahun, $bulan);
         $journal = $this->accounting->getGeneralJournal($tahun, $bulan);
 
-        $report = LaporanKeuangan::with('director')
-            ->where('periode_tahun', $tahun)
-            ->where('periode_bulan', $bulan)
-            ->first();
+        $reportQuery = LaporanKeuangan::with('director')
+            ->where('periode_tahun', $tahun);
 
-        return view('reports', compact('tahun', 'bulan', 'availableYears', 'income', 'balance', 'journal', 'report'));
+        if ($bulan !== null) {
+            $reportQuery->where('periode_bulan', $bulan);
+        } else {
+            $reportQuery->whereNull('periode_bulan');
+        }
+
+        $report = $reportQuery->first();
+
+        // Hitung Arus Kas Riil (Metode Langsung)
+        $txReportQuery = Transaksi::whereYear('tanggal', $tahun)->where('status', 'disetujui');
+        if ($bulan !== null) {
+            $txReportQuery->whereMonth('tanggal', $bulan);
+        }
+        $cashFlowMasuk = (float) (clone $txReportQuery)->where('jenis_transaksi', 'masuk')->sum('nominal');
+        $cashFlowKeluar = (float) (clone $txReportQuery)->where('jenis_transaksi', 'keluar')->sum('nominal');
+        $cashFlow = [
+            'arus_masuk' => $cashFlowMasuk,
+            'arus_keluar' => $cashFlowKeluar,
+            'bersih' => $cashFlowMasuk - $cashFlowKeluar,
+        ];
+
+        return view('reports', compact('tahun', 'bulan', 'availableYears', 'income', 'balance', 'journal', 'report', 'cashFlow'));
     }
 
     /**
@@ -64,7 +86,7 @@ class ReportController extends Controller
         $defaultYear = !empty($availableYears) ? $availableYears[0] : 2025;
         $tahun = (int) $request->query('tahun', $defaultYear);
         $bulanQuery = $request->query('bulan');
-        $bulan = ($bulanQuery === 'all' || $bulanQuery === '0' || $bulanQuery === '') ? 0 : (int) ($bulanQuery ?? 1);
+        $bulan = ($bulanQuery === null || $bulanQuery === 'all' || $bulanQuery === '0' || $bulanQuery === '') ? 0 : (int) $bulanQuery;
 
         $filePath = $this->konverter->exportToFile($tahun, $bulan);
         $fileName = ($bulan > 0)

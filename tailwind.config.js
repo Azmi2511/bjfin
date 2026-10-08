@@ -71,11 +71,18 @@ export default {
                 "primary-container": "#b91c1c",
                 "surface-container": "#eaedff",
                 "inverse-surface": "#283044",
+                // Official BUMDesa Kuala Alam Mobile Design System (from D:\Tugas Kuliah\Skripsi\Project\bj_fin_mobile\DESIGN.md)
+                'bumdes-red': '#C62828',
+                'bumdes-red-dark': '#9A1B1B',
+                'bumdes-red-light': '#FFEBEE',
+                'bumdes-gold': '#D97706',
+                'bumdes-green': '#15803D',
+                'bumdes-bg': '#FAF8F5',
+                'bumdes-dark': '#1E293B',
+                'bumdes-border': '#E5E0D8',
+                'bumdes-muted': '#64748B',
                 // Backward compatibility colors
-                'bumdes-cream': '#faf8ff',
-                'bumdes-border': '#CBD5E1',
-                'bumdes-dark': '#131b2e',
-                'bumdes-muted': '#5b403d',
+                'bumdes-cream': '#FAF8F5',
             },
             spacing: {
                 "gutter-desktop": "1.5rem",
