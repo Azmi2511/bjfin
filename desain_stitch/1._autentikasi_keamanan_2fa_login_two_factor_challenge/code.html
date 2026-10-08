@@ -1,0 +1,295 @@
+<!DOCTYPE html><html lang="id" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_blank" name="shell-type"><title>Autentikasi BJFin - BUMDes Kuala Alam</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#d2d9f4","on-primary-fixed-variant":"#93000b","tertiary":"#614000","surface-container-highest":"#dae2fd","inverse-primary":"#ffb4ab","surface-container-high":"#e2e7ff","on-surface":"#131b2e","surface-container-lowest":"#ffffff","on-background":"#131b2e","primary":"#93000b","outline":"#8f6f6c","surface-variant":"#dae2fd","on-secondary-container":"#007233","secondary":"#006d30","surface-container-low":"#f2f3ff","inverse-on-surface":"#eef0ff","on-tertiary":"#ffffff","surface":"#faf8ff","on-secondary-fixed":"#00210a","on-error-container":"#93000a","primary-fixed-dim":"#ffb4ab","secondary-container":"#92f5a4","on-surface-variant":"#5b403d","primary-fixed":"#ffdad6","secondary-fixed-dim":"#79db8d","background":"#faf8ff","surface-bright":"#faf8ff","on-secondary-fixed-variant":"#005323","on-primary-container":"#ffcdc7","tertiary-fixed":"#ffddb0","surface-tint":"#b91c1c","on-secondary":"#ffffff","tertiary-container":"#805600","on-primary-fixed":"#410002","on-tertiary-fixed":"#281800","on-tertiary-fixed-variant":"#614000","secondary-fixed":"#95f8a7","tertiary-fixed-dim":"#ffba46","error":"#ba1a1a","on-tertiary-container":"#ffd18f","on-primary":"#ffffff","outline-variant":"#e4beb9","error-container":"#ffdad6","on-error":"#ffffff","primary-container":"#b91c1c","surface-container":"#eaedff","inverse-surface":"#283044"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-desktop":"1.5rem","space-xs":"0.25rem","gutter":"1rem","margin-desktop":"2rem","space-sm":"0.5rem","margin-tablet":"1.5rem","space-lg":"1.25rem","space-md":"0.75rem","space-xl":"2rem","margin":"1rem","gutter-tablet":"1.25rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Inter"],"tabular-mono":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-lg-mobile":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"600"}],"tabular-mono":["13px",{lineHeight:"18px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-sm":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen flex items-center justify-center p-margin antialiased"><main class="w-full max-w-lg bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_rgba(15,23,42,0.08)] p-space-xl"><div class="flex flex-col w-full">
+<!-- Interactive View Switcher for Single-Shell & Two-Panel Experience -->
+<div class="relative w-full overflow-hidden">
+<!-- Top Step Pill Selector -->
+<div class="flex items-center justify-between bg-surface-container-low p-space-xs rounded-full shadow-sm mb-space-lg max-w-xs mx-auto">
+<button class="flex-1 py-1.5 px-space-sm rounded-full text-center font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-1.5" id="tab-btn-login" onclick="switchAuthTab('login')" type="button">
+<span class="material-symbols-outlined text-base">login</span>
+        1. Login Kredensial
+      </button>
+<button class="flex-1 py-1.5 px-space-sm rounded-full text-center font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" id="tab-btn-2fa" onclick="switchAuthTab('2fa')" type="button">
+<span class="material-symbols-outlined text-base">verified_user</span>
+        2. Kode 2FA
+      </button>
+</div>
+<!-- Container of both views with smooth switch -->
+<div class="relative w-full">
+<!-- VIEW 1: Login Utama (/login) -->
+<section class="flex flex-col w-full transition-opacity duration-300" id="view-login">
+<!-- Brand Header Section -->
+<div class="flex flex-col items-center text-center mb-space-lg">
+<div class="relative mb-space-md">
+<div class="w-20 h-20 rounded-full bg-surface-container-high p-1 shadow-md flex items-center justify-center overflow-hidden ring-2 ring-primary/20">
+<img alt="Emblem BUMDes Kuala Alam" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZFTqc0MdKk_KmXIo_IsS9snOTiPD-eVIBPtyLGZeugBEiF6-nR1c8QkwDSmYhqWECvEym5pJalCDi447EK5tuF8DyGxo_tO3xCIELtYDio5sEqKvTQK9Gk6gg-rbhCW-7zd2sDjyUjULvqRV09cJ1VH45bn2Iy_nxM0t2Qc9NzGwI_rbyOYset1PsSSm9YkdH607cW2EYC0g3lwFBkxAsguXTTscemF0wsR7WUhUy9GPq5PWgVa7Zuw">
+</div>
+<span class="absolute -bottom-1 -right-1 bg-secondary text-on-secondary rounded-full p-1 shadow-sm flex items-center justify-center" title="Sertifikasi SAK ETAP Aktif">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="bg-surface-container-high text-primary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider mb-2 inline-flex items-center gap-1.5">
+BJFin</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-1">
+            BUMDes KUALA ALAM
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+            Sistem Pelaporan Keuangan SAK ETAP <span class="font-semibold text-on-surface">(BJFin: Bandar Jaya Financial)</span>
+</p>
+</div>
+<!-- Form Credentials -->
+<form class="flex flex-col gap-space-md" id="form-login" onsubmit="event.preventDefault(); switchAuthTab('2fa');">
+<!-- Input Email / Identitas -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface" for="login-email">
+                Email / NIK Petugas Keuangan
+              </label>
+<span class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">verified</span> Terverifikasi
+              </span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">
+                alternate_email
+              </span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-3 py-2.5 rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="login-email" name="email" placeholder="nama@kualaalam.desa.id" required="" type="email" value="bendahara@kualaalam.desa.id">
+</div>
+</div>
+<!-- Input Kata Sandi -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface" for="login-password">
+                Kata Sandi Otoritas
+              </label>
+<a class="font-label-md text-label-md text-primary hover:underline" href="javascript:void(0)">
+                Lupa Kata Sandi?
+              </a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">
+                lock
+              </span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-10 py-2.5 rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all font-tabular-mono tracking-widest" id="login-password" name="password" placeholder="••••••••••••" required="" type="password" value="SAK_Etap_2026_Secure!">
+<button aria-label="Tampilkan atau sembunyikan kata sandi" class="absolute right-3 text-on-surface-variant hover:text-on-surface focus:outline-none" id="toggle-pwd-btn" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-lg" id="toggle-pwd-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember Me + Security Hash indicator -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" name="remember" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ingat saya</span>
+</label>
+
+</div>
+<!-- Primary Login CTA -->
+<button class="w-full mt-2 py-3 px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary font-headline-md text-headline-md shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group active:scale-[0.99]" type="submit">
+<span class="">MASUK&nbsp;</span>
+
+</button>
+</form>
+<!-- Or Divider -->
+<div class="relative my-space-lg flex items-center justify-center">
+<div class="w-full h-px bg-surface-variant"></div>
+<span class="absolute bg-surface-container-lowest px-3 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+            Atau Masuk Dengan
+          </span>
+</div>
+<!-- Google Socialite OAuth for Village Domain -->
+<button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-body-md text-body-md shadow-sm transition-all duration-150 flex items-center justify-center gap-3 active:scale-[0.99]" onclick="switchAuthTab('2fa')" type="button">
+<!-- Stylized Google SVG Emblem -->
+<svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24">
+<path d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z" fill="#4285F4"></path>
+<path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z" fill="#34A853"></path>
+<path d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.16 0 9.94 0 12s.45 3.84 1.25 5.42l4.03-3.15z" fill="#FBBC05"></path>
+<path d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" fill="#EA4335"></path>
+</svg>
+<span class="font-medium">Masuk dengan Akun Google</span>
+</button>
+<!-- Footer Audit Notice -->
+<div class="mt-space-xl pt-space-md flex flex-col items-center gap-1.5 text-center">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+<span class="">Protected by 2FA &amp; SAK ETAP Accounting Standard</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant/80">
+            © 2026 Badan Usaha Milik Desa (BUMDes) Kuala Alam. Hak Cipta Dilindungi.
+          </span>
+</div>
+</section>
+<!-- VIEW 2: Modal Challenge Autentikasi 2FA (/two-factor-challenge) -->
+<section class="flex-col w-full transition-opacity duration-300 hidden" id="view-2fa">
+<!-- Shield Verification Banner -->
+<div class="flex flex-col items-center text-center mb-space-lg">
+<div class="relative w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-sm shadow-md">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">
+              lock_person
+            </span>
+<span class="absolute top-0 right-0 w-3.5 h-3.5 bg-secondary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-2 shadow-sm">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">verified</span>
+            VERIFIKASI KEAMANAN (2FA)
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-1">
+            Konfirmasi Multi-Faktor
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+            Masukkan 6 digit kode sandi sekali pakai dari aplikasi <span class="font-semibold text-on-surface">Google Authenticator</span> Anda.
+          </p>
+</div>
+<!-- Authenticator Challenge Card -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-inner flex flex-col items-center gap-space-md">
+<!-- Account pill identification -->
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-1.5 rounded-full shadow-sm text-left w-full justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs">B</span>
+<span class="font-tabular-mono text-tabular-mono text-on-surface truncate">bendahara@kualaalam.desa.id</span>
+</div>
+<span class="text-xs font-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded">Aktif</span>
+</div>
+<!-- 6-Digit OTP Box Grid (Formatted: [4][8][2] - [9][1][0]) -->
+<div class="w-full flex flex-col items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">
+              Kode Otentikasi SAK ETAP
+            </span>
+<div class="flex items-center justify-center gap-1.5 sm:gap-2" id="otp-container">
+<!-- Digit 1 -->
+<input class="otp-digit w-10 sm:w-12 h-12 sm:h-14 bg-surface-container-lowest text-center font-headline-lg text-headline-lg font-tabular-mono text-on-surface rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-highest transition-all" inputmode="numeric" maxlength="1" type="text" value="4">
+<!-- Digit 2 -->
+<input class="otp-digit w-10 sm:w-12 h-12 sm:h-14 bg-surface-container-lowest text-center font-headline-lg text-headline-lg font-tabular-mono text-on-surface rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-highest transition-all" inputmode="numeric" maxlength="1" type="text" value="8">
+<!-- Digit 3 -->
+<input class="otp-digit w-10 sm:w-12 h-12 sm:h-14 bg-surface-container-lowest text-center font-headline-lg text-headline-lg font-tabular-mono text-on-surface rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-highest transition-all" inputmode="numeric" maxlength="1" type="text" value="2">
+<!-- Separator Bar -->
+<div class="w-2.5 h-1 bg-on-surface-variant/40 rounded-full mx-0.5"></div>
+<!-- Digit 4 -->
+<input class="otp-digit w-10 sm:w-12 h-12 sm:h-14 bg-surface-container-lowest text-center font-headline-lg text-headline-lg font-tabular-mono text-on-surface rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-highest transition-all" inputmode="numeric" maxlength="1" type="text" value="9">
+<!-- Digit 5 -->
+<input class="otp-digit w-10 sm:w-12 h-12 sm:h-14 bg-surface-container-lowest text-center font-headline-lg text-headline-lg font-tabular-mono text-on-surface rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-highest transition-all" inputmode="numeric" maxlength="1" type="text" value="1">
+<!-- Digit 6 -->
+<input class="otp-digit w-10 sm:w-12 h-12 sm:h-14 bg-surface-container-lowest text-center font-headline-lg text-headline-lg font-tabular-mono text-on-surface rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-highest transition-all" inputmode="numeric" maxlength="1" type="text" value="0">
+</div>
+</div>
+<!-- Dynamic OTP Countdown Timer & Resync -->
+<div class="flex items-center justify-between w-full text-on-surface-variant font-body-sm text-body-sm px-1">
+<div class="flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-base animate-spin" style="animation-duration: 4s;">schedule</span>
+<span class="">Kode berlaku dalam <strong class="font-tabular-mono text-on-surface" id="timer-count">27</strong> detik</span>
+</div>
+<button class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" onclick="resetOtpTimer()" type="button">
+<span class="material-symbols-outlined text-sm">refresh</span> Segarkan
+            </button>
+</div>
+<!-- Progress Bar Indicator for Time Window -->
+<div class="w-full bg-surface-variant rounded-full h-1 overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-1000" id="otp-timer-bar" style="width: 90%;"></div>
+</div>
+</div>
+<!-- Action Buttons for Verification -->
+<div class="flex flex-col gap-space-sm mt-space-lg">
+<!-- Green Success Action Button -->
+<button class="w-full py-3 px-space-lg rounded-lg bg-secondary hover:bg-on-secondary-container text-on-secondary font-headline-md text-headline-md shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-[0.99]" onclick="triggerSuccessVerification()" type="button">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="">VERIFIKASI &amp; MASUK SISTEM</span>
+</button>
+<!-- Back & Emergency Recovery Links -->
+<div class="flex flex-col items-center gap-2 mt-space-sm">
+<button class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1 text-center" onclick="alert('Membuka dialog masukan Recovery Code (Format: XXXX-XXXX-XXXX)');" type="button">
+<span class="material-symbols-outlined text-base">key</span>
+<span class="">Gunakan Kode Pemulihan Cadangan (Recovery Code)</span>
+</button>
+<button class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface flex items-center gap-1 py-1" onclick="switchAuthTab('login')" type="button">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+<span class="">Kembali ke Halaman Login Utama</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  function switchAuthTab(target) {
+    const loginView = document.getElementById('view-login');
+    const twoFaView = document.getElementById('view-2fa');
+    const tabLoginBtn = document.getElementById('tab-btn-login');
+    const tab2FaBtn = document.getElementById('tab-btn-2fa');
+
+    if (target === '2fa') {
+      loginView.classList.add('hidden');
+      twoFaView.classList.remove('hidden');
+
+      tab2FaBtn.className = "flex-1 py-1.5 px-space-sm rounded-full text-center font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-secondary shadow-sm flex items-center justify-center gap-1.5";
+      tabLoginBtn.className = "flex-1 py-1.5 px-space-sm rounded-full text-center font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5";
+      
+      const firstDigit = document.querySelectorAll('.otp-digit')[0];
+      if (firstDigit) firstDigit.focus();
+    } else {
+      twoFaView.classList.add('hidden');
+      loginView.classList.remove('hidden');
+
+      tabLoginBtn.className = "flex-1 py-1.5 px-space-sm rounded-full text-center font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center gap-1.5";
+      tab2FaBtn.className = "flex-1 py-1.5 px-space-sm rounded-full text-center font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5";
+    }
+  }
+
+  function togglePasswordVisibility() {
+    const pwdInput = document.getElementById('login-password');
+    const icon = document.getElementById('toggle-pwd-icon');
+    if (pwdInput.type === 'password') {
+      pwdInput.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      pwdInput.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  }
+
+  // Interactive OTP input auto-advance
+  const otpInputs = document.querySelectorAll('.otp-digit');
+  otpInputs.forEach((input, index) => {
+    input.addEventListener('input', (e) => {
+      if (e.target.value.length === 1 && index < otpInputs.length - 1) {
+        otpInputs[index + 1].focus();
+      }
+    });
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Backspace' && !e.target.value && index > 0) {
+        otpInputs[index - 1].focus();
+      }
+    });
+  });
+
+  // Countdown simulation
+  let timeLeft = 24;
+  const timerElem = document.getElementById('timer-count');
+  const barElem = document.getElementById('otp-timer-bar');
+
+  function updateTimer() {
+    if (timeLeft > 0) {
+      timeLeft--;
+      if (timerElem) timerElem.textContent = timeLeft;
+      if (barElem) barElem.style.width = ((timeLeft / 30) * 100) + '%';
+    } else {
+      timeLeft = 30;
+      if (timerElem) timerElem.textContent = timeLeft;
+      if (barElem) barElem.style.width = '100%';
+    }
+  }
+
+  setInterval(updateTimer, 1000);
+
+  function resetOtpTimer() {
+    timeLeft = 30;
+    if (timerElem) timerElem.textContent = timeLeft;
+    if (barElem) barElem.style.width = '100%';
+  }
+
+  function triggerSuccessVerification() {
+    alert('Autentikasi Sukses! Mengarahkan ke Buku Besar Utama SAK ETAP BUMDes Kuala Alam...');
+  }
+</script></main>
+
+</body></html>

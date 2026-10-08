@@ -1,0 +1,65 @@
+{
+    "name": "bumdes/kuala-alam-finance",
+    "type": "project",
+    "description": "Sistem Pelaporan Keuangan Terintegrasi BUMDes Kuala Alam dengan Pendekatan Guided-Input Interface",
+    "keywords": ["bumdes", "laravel", "sak-etap", "guided-input", "kuala-alam"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.2 || ^8.3",
+        "bacon/bacon-qr-code": "^3.1",
+        "laravel/breeze": "^2.4",
+        "laravel/framework": "^11.0 || ^12.0",
+        "laravel/sanctum": "^4.0",
+        "laravel/socialite": "^5.31",
+        "laravel/tinker": "^2.9",
+        "phpoffice/phpspreadsheet": "^2.0",
+        "pragmarx/google2fa-laravel": "^3.0",
+        "realrashid/sweet-alert": "^8.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "laravel/boost": "^2.10",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.0",
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/",
+            "PhpOffice\\PhpSpreadsheet\\": "vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/",
+            "ZipStream\\": "vendor/maennchen/zipstream-php/src/",
+            "Complex\\": "vendor/markbaker/complex/classes/src/",
+            "Matrix\\": "vendor/markbaker/matrix/classes/src/",
+            "Psr\\SimpleCache\\": "vendor/psr/simple-cache/src/",
+            "Composer\\Pcre\\": "vendor/composer/pcre/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

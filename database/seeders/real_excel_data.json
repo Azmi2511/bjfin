@@ -1,0 +1,1686 @@
+{
+  "wifi": [
+    {
+      "jenis": "keluar",
+      "kode": "52-WF",
+      "nominal": 14709000.0,
+      "keterangan": "Pembayaran PADes 2024",
+      "bukti": "K-WF",
+      "raw_uraian": "Pembayaran PADes 2024"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Lia - Jasa",
+      "bukti": "M-01",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Lia - Safety  Peralatan",
+      "bukti": "M-01",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Akop - Jasa",
+      "bukti": "M-02",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Akop - Safety  Peralatan",
+      "bukti": "M-02",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Juren - Jasa",
+      "bukti": "M-03",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Juren - Safety  Peralatan",
+      "bukti": "M-03",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Ijal - Jasa",
+      "bukti": "M-04",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Ijal - Safety  Peralatan",
+      "bukti": "M-04",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 93000.0,
+      "keterangan": "Diterima Dari Yal - Jasa",
+      "bukti": "M-05",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Yal - Safety  Peralatan",
+      "bukti": "M-05",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Sandra - Jasa",
+      "bukti": "M-06",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Sandra - Safety  Peralatan",
+      "bukti": "M-06",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 193000.0,
+      "keterangan": "Diterima dari Indra - Jasa",
+      "bukti": "M-07",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Indra - Safety  Peralatan",
+      "bukti": "M-07",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima dari Dini - Jasa",
+      "bukti": "M-08",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Dini - Safety  Peralatan",
+      "bukti": "M-08",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Amer - Jasa",
+      "bukti": "M-09",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Amer - Safety  Peralatan",
+      "bukti": "M-09",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Suri - Jasa",
+      "bukti": "M-10",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Suri - Safety  Peralatan",
+      "bukti": "M-10",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Anton/Riska - Jasa",
+      "bukti": "M-11",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Anton/Riska - Safety  Peralatan",
+      "bukti": "M-11",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Sucipto - Jasa",
+      "bukti": "M-12",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Sucipto - Safety  Peralatan",
+      "bukti": "M-12",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Agus Kedai - Jasa",
+      "bukti": "M-13",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Agus Kedai - Safety  Peralatan",
+      "bukti": "M-13",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Agustina - Jasa",
+      "bukti": "M-14",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Agustina - Safety  Peralatan",
+      "bukti": "M-14",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Menol - Jasa",
+      "bukti": "M-15",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Menol - Safety  Peralatan",
+      "bukti": "M-15",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Evi - Jasa",
+      "bukti": "M-16",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Evi - Safety  Peralatan",
+      "bukti": "M-16",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Uwa - Jasa",
+      "bukti": "M-17",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Uwa - Safety  Peralatan",
+      "bukti": "M-17",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Puji - Jasa",
+      "bukti": "M-18",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Puji - Safety  Peralatan",
+      "bukti": "M-18",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 93000.0,
+      "keterangan": "Diterima Dari Melda - Jasa",
+      "bukti": "M-19",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Melda - Safety  Peralatan",
+      "bukti": "M-19",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 93000.0,
+      "keterangan": "Diterima Dari Yulia - Jasa",
+      "bukti": "M-20",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Yulia - Safety  Peralatan",
+      "bukti": "M-20",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Eka - Jasa",
+      "bukti": "M-21",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Eka - Safety  Peralatan",
+      "bukti": "M-21",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Beri - Jasa",
+      "bukti": "M-22",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Beri - Safety  Peralatan",
+      "bukti": "M-22",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Rahmah - Jasa",
+      "bukti": "M-23",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Rahmah - Safety  Peralatan",
+      "bukti": "M-23",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Ijun Yati - Jasa",
+      "bukti": "M-24",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Ijun Yati - Safety  Peralatan",
+      "bukti": "M-24",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Jojon 2 - Jasa",
+      "bukti": "M-25",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Jojon 2 - 23",
+      "bukti": "M-25",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Ude Intan - Jasa",
+      "bukti": "M-26",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Ude Intan - 23",
+      "bukti": "M-26",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Ares - Jasa",
+      "bukti": "M-27",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Ares - 23",
+      "bukti": "M-27",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Santo - Jasa",
+      "bukti": "M-28",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Santo - 23",
+      "bukti": "M-28",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Eya - Jasa",
+      "bukti": "M-29",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Eya - 23",
+      "bukti": "M-29",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Ucai - Jasa",
+      "bukti": "M-30",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Ucai - Safety  Peralatan",
+      "bukti": "M-30",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Buden - Jasa",
+      "bukti": "M-31",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Buden - Safety  Peralatan",
+      "bukti": "M-31",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Manja - Jasa",
+      "bukti": "M-32",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Manja - Safety  Peralatan",
+      "bukti": "M-32",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Jefri - Jasa",
+      "bukti": "M-33",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Jefri - Safety  Peralatan",
+      "bukti": "M-33",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 93000.0,
+      "keterangan": "Diterima dari Rozi - Jasa",
+      "bukti": "M-34",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Rozi - Safety  Peralatan",
+      "bukti": "M-34",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Eri/Fitri - Jasa",
+      "bukti": "M-35",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Eri/Fitri - Safety  Peralatan",
+      "bukti": "M-35",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Agus Poltek - Jasa",
+      "bukti": "M-36",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Agus Poltek - Safety  Peralatan",
+      "bukti": "M-36",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Is - Jasa",
+      "bukti": "M-37",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Is - Safety  Peralatan",
+      "bukti": "M-37",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Is - Jasa",
+      "bukti": "M-37",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Is - Safety  Peralatan",
+      "bukti": "M-37",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Nardi - Jasa",
+      "bukti": "M-39",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Nardi - Safety  Peralatan",
+      "bukti": "M-39",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Yuni - Jasa",
+      "bukti": "M-40",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Yuni - Safety  Peralatan",
+      "bukti": "M-40",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Yong Ju - Jasa",
+      "bukti": "M-41",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Yong Ju - Safety  Peralatan",
+      "bukti": "M-41",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 93000.0,
+      "keterangan": "Diterima Dari Nia - Jasa",
+      "bukti": "M-42",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Nia - Safety  Peralatan",
+      "bukti": "M-42",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 193000.0,
+      "keterangan": "Diterima Dari Emi - Jasa",
+      "bukti": "M-43",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Emi - Safety  Peralatan",
+      "bukti": "M-43",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Komeng - Jasa",
+      "bukti": "M-44",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Komeng - Safety  Peralatan",
+      "bukti": "M-44",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Aseng - Jasa",
+      "bukti": "M-45",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Aseng - Safety  Peralatan",
+      "bukti": "M-45",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 193000.0,
+      "keterangan": "Diterima Dari Kusai - Jasa",
+      "bukti": "M-46",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Kusai - Safety  Peralatan",
+      "bukti": "M-46",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 243000.0,
+      "keterangan": "Diterima Dari Ita - Jasa",
+      "bukti": "M-47",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Ita - Safety  Peralatan",
+      "bukti": "M-47",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Butet Atan - Jasa",
+      "bukti": "M-48",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Butet Atan - Safety  Peralatan",
+      "bukti": "M-48",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Irsa - Jasa",
+      "bukti": "M-49",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Irsa - Safety  Peralatan",
+      "bukti": "M-49",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Nur - Jasa",
+      "bukti": "M-50",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Nur - Safety  Peralatan",
+      "bukti": "M-50",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Pendi - Jasa",
+      "bukti": "M-51",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Pendi - Safety  Peralatan",
+      "bukti": "M-51",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 193000.0,
+      "keterangan": "Diterima Dari Razak - Jasa",
+      "bukti": "M-52",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Razak - Safety  Peralatan",
+      "bukti": "M-52",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Yan - Jasa",
+      "bukti": "M-53",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Yan - Safety  Peralatan",
+      "bukti": "M-53",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Inar - Jasa",
+      "bukti": "M-54",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Inar - Safety  Peralatan",
+      "bukti": "M-54",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Yuyun - Jasa",
+      "bukti": "M-71",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Yuyun - Safety  Peralatan",
+      "bukti": "M-71",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima Dari Biden - Jasa",
+      "bukti": "M-56",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Biden - 23",
+      "bukti": "M-56",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Ijun - Jasa",
+      "bukti": "M-57",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Ijun - 23",
+      "bukti": "M-57",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Habibah - Jasa",
+      "bukti": "M-58",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Habibah - 23",
+      "bukti": "M-58",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Mira - Jasa",
+      "bukti": "M-59",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Mira - 23",
+      "bukti": "M-59",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima Dari Ider - Jasa",
+      "bukti": "M-60",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Ider - 23",
+      "bukti": "M-60",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 93000.0,
+      "keterangan": "Diterima Dari Tina - Jasa",
+      "bukti": "M-61",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima Dari Tina - 23",
+      "bukti": "M-61",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Muhar - Jasa",
+      "bukti": "M-62",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Muhar - 23",
+      "bukti": "M-62",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Sam - Jasa",
+      "bukti": "M-63",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Sam - 23",
+      "bukti": "M-63",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Wandi - Jasa",
+      "bukti": "M-64",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Wandi - 23",
+      "bukti": "M-64",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Juner - Jasa",
+      "bukti": "M-65",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Juner - 23",
+      "bukti": "M-65",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Tia - Jasa",
+      "bukti": "M-66",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Tia - 23",
+      "bukti": "M-66",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 193000.0,
+      "keterangan": "Diterima dari Casana - Jasa",
+      "bukti": "M-67",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Casana - 23",
+      "bukti": "M-67",
+      "raw_uraian": "23"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 168000.0,
+      "keterangan": "Diterima dari Siti Rambai - Jasa",
+      "bukti": "M-68",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Siti Rambai - Safety  Peralatan",
+      "bukti": "M-68",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 143000.0,
+      "keterangan": "Diterima dari Syamsir - Jasa",
+      "bukti": "M-69",
+      "raw_uraian": "Jasa"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "22-WF",
+      "nominal": 7000.0,
+      "keterangan": "Diterima dari Syamsir - Safety  Peralatan",
+      "bukti": "M-69",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-WF",
+      "nominal": 483000.0,
+      "keterangan": "Safety  Peralatan",
+      "bukti": "K-01",
+      "raw_uraian": "Safety  Peralatan"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-WF",
+      "nominal": 700000.0,
+      "keterangan": "Pembayaran Gaji Kasir",
+      "bukti": "K-02",
+      "raw_uraian": "Pembayaran Gaji Kasir"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-WF",
+      "nominal": 254000.0,
+      "keterangan": "Pembelian Token Listrik dan Server",
+      "bukti": "K-03",
+      "raw_uraian": "Pembelian Token Listrik dan Server"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-WF",
+      "nominal": 650000.0,
+      "keterangan": "Perawatan Alat dan ODP",
+      "bukti": "K-04",
+      "raw_uraian": "Perawatan Alat dan ODP"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-WF",
+      "nominal": 200000.0,
+      "keterangan": "Pembelian Adaptor 10 Unit",
+      "bukti": "K-05",
+      "raw_uraian": "Pembelian Adaptor 10 Unit"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-WF",
+      "nominal": 280000.0,
+      "keterangan": "Jamuan tamu",
+      "bukti": "K-WF",
+      "raw_uraian": "Jamuan tamu"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "57-WF",
+      "nominal": 6732000.0,
+      "keterangan": "Pembayaran Bandwith",
+      "bukti": "K-06",
+      "raw_uraian": "Pembayaran Bandwith"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-WF",
+      "nominal": 510500.0,
+      "keterangan": "Ketua",
+      "bukti": "K-07",
+      "raw_uraian": "Ketua"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-WF",
+      "nominal": 283500.0,
+      "keterangan": "Sekretaris",
+      "bukti": "K-08",
+      "raw_uraian": "Sekretaris"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-WF",
+      "nominal": 340000.0,
+      "keterangan": "Bendahara",
+      "bukti": "K-09",
+      "raw_uraian": "Bendahara"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-WF",
+      "nominal": 72500.0,
+      "keterangan": "Komisaris",
+      "bukti": "K-10",
+      "raw_uraian": "Komisaris"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-WF",
+      "nominal": 48500.0,
+      "keterangan": "Pengawas",
+      "bukti": "K-11",
+      "raw_uraian": "Pengawas"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-WF",
+      "nominal": 145500.0,
+      "keterangan": "Direktur",
+      "bukti": "K-12",
+      "raw_uraian": "Direktur"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-WF",
+      "nominal": 97000.0,
+      "keterangan": "Sekretaris",
+      "bukti": "K-13",
+      "raw_uraian": "Sekretaris"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-WF",
+      "nominal": 121500.0,
+      "keterangan": "Bendahara",
+      "bukti": "K-14",
+      "raw_uraian": "Bendahara"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-WF",
+      "nominal": 11325000.0,
+      "keterangan": "Diterima dari Syamsir - Jumlah",
+      "bukti": "M-69",
+      "raw_uraian": "Jumlah"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-WF",
+      "nominal": -14302000.0,
+      "keterangan": "",
+      "bukti": "K-WF",
+      "raw_uraian": ""
+    }
+  ],
+  "usp": [
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 417000.0,
+      "keterangan": "Dibayar angsuran ke-1 Zarniyana (Pokok)",
+      "bukti": "M-001",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 83000.0,
+      "keterangan": "Dibayar angsuran ke-1 Zarniyana (Bunga)",
+      "bukti": "M-001",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 292000.0,
+      "keterangan": "Dibayar angsuran ke-4 Agus Kurniawan (Pokok)",
+      "bukti": "M-002",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 58000.0,
+      "keterangan": "Dibayar angsuran ke-4 Agus Kurniawan (Bunga)",
+      "bukti": "M-002",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 205000.0,
+      "keterangan": "Dibayar angsuran ke-21 M.Nor (Pokok)",
+      "bukti": "M-003",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 834000.0,
+      "keterangan": "Dibayar angsuran ke-1 Ismail Z (Pokok)",
+      "bukti": "M-004",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 166000.0,
+      "keterangan": "Dibayar angsuran ke-1 Ismail Z (Bunga)",
+      "bukti": "M-004",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 500000.0,
+      "keterangan": "Dibayar angsuran ke-17 Supri (Pokok)",
+      "bukti": "M-005",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 20000000.0,
+      "keterangan": "Dibayar angsuran Andika (Pokok)",
+      "bukti": "M-006",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 16000000.0,
+      "keterangan": "Dibayar angsuran Iwan (Pokok)",
+      "bukti": "M-007",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 30000000.0,
+      "keterangan": "Setor ke Rek.Usp",
+      "bukti": "K-001",
+      "raw_uraian": "Setor ke Rek.Usp"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 167000.0,
+      "keterangan": "Dibayar angsuran ke-4 Maryamah (Pokok)",
+      "bukti": "M-008",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 33000.0,
+      "keterangan": "Dibayar angsuran ke-4 Maryamah (Bunga)",
+      "bukti": "M-008",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 125000.0,
+      "keterangan": "Dibayar angsuran ke-22 Eridayati (Pokok)",
+      "bukti": "M-009",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 250000.0,
+      "keterangan": "Dibayar angsuran ke-4 Rusnah (Pokok)",
+      "bukti": "M-010",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 75000.0,
+      "keterangan": "Dibayar angsuran ke-4 Rusnah (Bunga)",
+      "bukti": "M-010",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 81000.0,
+      "keterangan": "Dibayar angsuran ke-21 A.Rahman (Pokok)",
+      "bukti": "M-011",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 335000.0,
+      "keterangan": "Dibayar angsuran ke-21 Amri (Pokok)",
+      "bukti": "M-012",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 72000.0,
+      "keterangan": "Dibayar angsuran ke-21 Lina Marlina (Pokok)",
+      "bukti": "M-013",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 500000.0,
+      "keterangan": "Dibayar angsuran Mardiana (Pokok)",
+      "bukti": "M-014",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 1000000.0,
+      "keterangan": "Dibayar angsuran Mardiana (Bunga)",
+      "bukti": "M-014",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 500000.0,
+      "keterangan": "Dibayar angsuran Hidayat (Pokok)",
+      "bukti": "M-015",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 1000000.0,
+      "keterangan": "Dibayar angsuran Hidayat (Bunga)",
+      "bukti": "M-015",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 250000.0,
+      "keterangan": "Dibayar angsuran ke-17 Ambran (Pokok)",
+      "bukti": "M-016",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 50000.0,
+      "keterangan": "Dibayar angsuran ke-17 Ambran (Bunga)",
+      "bukti": "M-016",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 1000000.0,
+      "keterangan": "Dibayar angsuran ke-3 Marlina (Bunga)",
+      "bukti": "M-017",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 209000.0,
+      "keterangan": "Dibayar angsuran ke-17 Sofyan (Pokok)",
+      "bukti": "M-018",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 41000.0,
+      "keterangan": "Dibayar angsuran ke-17 Sofyan (Bunga)",
+      "bukti": "M-018",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 100000.0,
+      "keterangan": "Konsumsi",
+      "bukti": "K-002",
+      "raw_uraian": "Konsumsi"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 23000.0,
+      "keterangan": "Isi pulsa kantor",
+      "bukti": "K-003",
+      "raw_uraian": "Isi pulsa kantor"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 130000.0,
+      "keterangan": "Dibayar angsuran Kaharudin (Pokok)",
+      "bukti": "M-019",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 120000.0,
+      "keterangan": "Dibayar angsuran Kaharudin (Bunga)",
+      "bukti": "M-019",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 417000.0,
+      "keterangan": "Dibayar angsuran ke-4 Zaunudin (Pokok)",
+      "bukti": "M-020",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 283000.0,
+      "keterangan": "Dibayar angsuran ke-4 Zaunudin (Bunga)",
+      "bukti": "M-020",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 300000.0,
+      "keterangan": "Bayar sewa kantor",
+      "bukti": "K-004",
+      "raw_uraian": "Bayar sewa kantor"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 295000.0,
+      "keterangan": "Dibayar angsuran ke-21 Syamsudin (Pokok)",
+      "bukti": "M-021",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 80000.0,
+      "keterangan": "Transport survey",
+      "bukti": "K-005",
+      "raw_uraian": "Transport survey"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 109000.0,
+      "keterangan": "Dibayar angsuran Khaidir (Pokok)",
+      "bukti": "M-022",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 41000.0,
+      "keterangan": "Dibayar angsuran Khaidir (Bunga)",
+      "bukti": "M-022",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 209000.0,
+      "keterangan": "Dibayar angsuran Rudi Hartono (Pokok)",
+      "bukti": "M-023",
+      "raw_uraian": "Pokok"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "41-USP",
+      "nominal": 41000.0,
+      "keterangan": "Dibayar angsuran Rudi Hartono (Bunga)",
+      "bukti": "M-023",
+      "raw_uraian": "Bunga"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 3010000.0,
+      "keterangan": "Dikeluarkan PADES 2023",
+      "bukti": "K-006",
+      "raw_uraian": "Dikeluarkan PADES 2023"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 7022000.0,
+      "keterangan": "Dikeluarkan Cadangan Modal Usaha 2023",
+      "bukti": "K-007",
+      "raw_uraian": "Dikeluarkan Cadangan Modal Usaha 2023"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 5398000.0,
+      "keterangan": "Hadiah pemanfaat",
+      "bukti": "K-008",
+      "raw_uraian": "Hadiah pemanfaat"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-USP",
+      "nominal": 586000.0,
+      "keterangan": "Ketua",
+      "bukti": "K-009",
+      "raw_uraian": "Ketua"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-USP",
+      "nominal": 503000.0,
+      "keterangan": "Kasir",
+      "bukti": "K-010",
+      "raw_uraian": "Kasir"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-USP",
+      "nominal": 503000.0,
+      "keterangan": "TU",
+      "bukti": "K-011",
+      "raw_uraian": "TU"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-USP",
+      "nominal": 503000.0,
+      "keterangan": "SAK",
+      "bukti": "K-012",
+      "raw_uraian": "SAK"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "51-USP",
+      "nominal": 898000.0,
+      "keterangan": "BUMDesa dan Pengawas",
+      "bukti": "K-013",
+      "raw_uraian": "BUMDesa dan Pengawas"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 499100.0,
+      "keterangan": "Hadiah pemanfaat",
+      "bukti": "K-014",
+      "raw_uraian": "Hadiah pemanfaat"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 499100.0,
+      "keterangan": "Dibayar angsuran Rudi Hartono (Titipan hadiah pemanfaat)",
+      "bukti": "M-023",
+      "raw_uraian": "Titipan hadiah pemanfaat"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 10000.0,
+      "keterangan": "Transport",
+      "bukti": "K-015",
+      "raw_uraian": "Transport"
+    },
+    {
+      "jenis": "keluar",
+      "kode": "52-USP",
+      "nominal": 12300000.0,
+      "keterangan": "Setor ke Rek-USP",
+      "bukti": "K-016",
+      "raw_uraian": "Setor ke Rek-USP"
+    },
+    {
+      "jenis": "masuk",
+      "kode": "13-USP",
+      "nominal": 46387100.0,
+      "keterangan": "Dibayar angsuran Rudi Hartono (Jumlah)",
+      "bukti": "M-023",
+      "raw_uraian": "Jumlah"
+    }
+  ]
+}
